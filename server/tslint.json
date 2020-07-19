@@ -1,0 +1,30 @@
+{
+  "defaultSeverity": "off",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "src/tableau-extensions-1.0.0.js"
+    ]
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "ordered-imports": [
+      false,
+      {
+        "grouped-imports": false
+      }
+    ]
+  }
+}
